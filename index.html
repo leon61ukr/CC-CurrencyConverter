@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер Валют</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертер Валют</h1>
+        <div class="input-section">
+            <input type="text" id="currencyInput" placeholder="Введіть суму та валюту, наприклад '123 USD'">
+            <select id="currencyDropdown">
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="PLN">PLN</option>
+                <option value="GBP">GBP</option>
+                <option value="CHF">CHF</option>
+                <option value="CAD">CAD</option>
+                <option value="CNY">CNY</option>
+                <option value="TRY">TRY</option>
+                <option value="ILS">ILS</option>
+                <option value="BTC">BTC</option>
+            </select>
+        </div>
+        <div class="results" style="display:none;">
+            <h2>Результати Конвертації:</h2>
+            <div id="conversionResults"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
